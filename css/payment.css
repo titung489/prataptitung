@@ -1,0 +1,278 @@
+/* ===================================================
+   Payment & Nepal-specific styles
+   =================================================== */
+
+/* Payment Modal */
+.payment-modal {
+  max-width: 560px;
+  width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 0;
+}
+.payment-modal-body { padding: 0; }
+
+.payment-modal-header {
+  text-align: center;
+  padding: 36px 32px 24px;
+  background: linear-gradient(135deg, var(--dark), #1a120a);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+.payment-modal-icon { font-size: 2.5rem; margin-bottom: 8px; }
+.payment-modal-header h3 { color: var(--white); font-size: 1.4rem; margin-bottom: 12px; }
+.payment-amount-display {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.payment-currency { color: var(--accent); font-size: 1.1rem; font-weight: 700; }
+.payment-value { color: var(--white); font-size: 2.2rem; font-family: var(--font-heading); font-weight: 700; }
+.payment-usd { color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+.payment-freq-badge {
+  display: inline-block;
+  background: rgba(200,151,58,0.2);
+  color: var(--accent);
+  border: 1px solid rgba(200,151,58,0.3);
+  border-radius: 50px;
+  padding: 3px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* Payment Tabs */
+.payment-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-alt);
+}
+.pay-tab {
+  flex: 1;
+  padding: 13px 8px;
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all var(--transition);
+  border-bottom: 3px solid transparent;
+}
+.pay-tab.active { color: var(--accent); border-bottom-color: var(--accent); background: var(--white); }
+.pay-tab:hover { color: var(--accent); }
+
+.pay-tab-content { display: none; padding: 24px; }
+.pay-tab-content.active { display: block; }
+
+/* Digital Wallets */
+.pay-instruction { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px; }
+
+.pay-number-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-alt);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: monospace;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.wallet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.wallet-card {
+  border: 2px solid color-mix(in srgb, var(--wc, #c8973a) 30%, transparent);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+  background: color-mix(in srgb, var(--wc, #c8973a) 6%, white);
+  transition: all var(--transition);
+}
+.wallet-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.wallet-logo {
+  font-weight: 800;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+.esewa-logo { color: #60bb46; }
+.khalti-logo { color: #5c2d91; }
+.connectips-logo { color: #003d7a; }
+.phonepay-logo { color: #5f259f; }
+.wallet-card span { font-size: 0.8rem; color: var(--text-muted); font-family: monospace; }
+
+/* Copy button */
+.copy-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all var(--transition);
+  font-family: var(--font-body);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+.copy-toast {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--dark);
+  color: var(--white);
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 9999;
+  pointer-events: none;
+}
+.copy-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* QR codes */
+.qr-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.qr-card {
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+}
+.qr-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+}
+.esewa-label { background: #60bb4620; color: #3d8a27; }
+.bank-label { background: #003d7a20; color: #003d7a; }
+
+.qr-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+}
+.qr-placeholder {
+  width: 180px;
+  height: 180px;
+  background: var(--bg-alt);
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--text-muted);
+}
+.qr-placeholder i { font-size: 2rem; color: var(--accent); }
+.qr-placeholder span { font-size: 0.9rem; font-weight: 600; }
+.qr-placeholder small { font-size: 0.72rem; text-align: center; }
+.qr-card > p { font-size: 0.8rem; color: var(--text-muted); margin-top: 10px; }
+
+/* Bank Details */
+.bank-details-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.bank-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.bank-icon { font-size: 2rem; }
+.bank-logo-row strong { display: block; font-size: 1rem; color: var(--dark); }
+.bank-logo-row span { font-size: 0.8rem; color: var(--text-muted); }
+
+.bank-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+.bank-label-txt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.bank-value-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+.bank-value-row span { font-size: 0.95rem; color: var(--dark); font-weight: 600; }
+.bank-value-row .mono { font-family: monospace; font-size: 1.05rem; letter-spacing: 0.05em; }
+
+.pay-note-small {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.payment-done-row { padding: 0 24px 24px; }
+
+/* Nepal payment logos in donation section */
+.nepal-payment-logos {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 12px;
+}
+.nepal-pay-badge {
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.badge-esewa { background: #60bb4620; color: #3d8a27; border: 1px solid #60bb4640; }
+.badge-khalti { background: #5c2d9120; color: #5c2d91; border: 1px solid #5c2d9140; }
+.badge-cips { background: #003d7a15; color: #003d7a; border: 1px solid #003d7a30; }
+.badge-phonepay { background: #5f259f15; color: #5f259f; border: 1px solid #5f259f30; }
+.badge-bank { background: #1a120a15; color: #3d2b0e; border: 1px solid #c8973a30; }
+
+@media (max-width: 640px) {
+  .qr-grid { grid-template-columns: 1fr; }
+  .wallet-grid { grid-template-columns: 1fr 1fr; }
+  .payment-modal { width: 98%; }
+}
