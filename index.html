@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pratap Titung — Thoughts That Matter</title>
+  <meta name="description" content="Personal blog by Pratap Titung — contemporary issues, premium articles, ebooks, and more." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/additions.css" />
+  <link rel="stylesheet" href="css/slideshow.css" />
+  <link rel="stylesheet" href="css/payment.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-initial">PT</span>
+        <span class="brand-name">Pratap Titung</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#blog">Blog</a>
+        <a href="#premium">Premium</a>
+        <a href="#ebooks">Ebooks</a>
+        <a href="#social">Community</a>
+        <a href="#videos">Videos</a>
+        <a href="#about">About</a>
+        <a href="#donate" class="btn btn-outline-nav">Donate ❤</a>
+        <a href="#premium" class="btn btn-nav">Subscribe</a>
+      </nav>
+      <!-- Language Toggle -->
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle Language" title="Switch to Nepali">
+        <span class="lang-icon">🌐</span>
+        <span class="lang-label" id="langLabel">EN</span>
+        <span class="lang-sep">|</span>
+        <span class="lang-alt">नेपाली</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow"><span class="dot"></span> New article every day</p>
+      <h1 class="hero-title">Thoughts That<br /><em>Matter.</em></h1>
+      <p class="hero-sub">
+        A space for sharp commentary on contemporary issues — politics, culture,<br class="desktop-br" />
+        society and the human condition. Written daily by Pratap Titung.
+      </p>
+      <div class="hero-cta">
+        <a href="#blog" class="btn btn-primary">Read Latest Posts</a>
+        <a href="#premium" class="btn btn-ghost">Explore Premium →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>500+</strong><span>Articles</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>12K+</strong><span>Readers</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>30+</strong><span>Ebooks</span></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== TICKER ===== -->
+  <div class="ticker-wrap">
+    <div class="ticker-label">TRENDING</div>
+    <div class="ticker-content">
+      <span>Democracy Under Siege &nbsp;•&nbsp;</span>
+      <span>The AI Governance Crisis &nbsp;•&nbsp;</span>
+      <span>Climate Justice Now &nbsp;•&nbsp;</span>
+      <span>Media & Power &nbsp;•&nbsp;</span>
+      <span>Youth Radicalism Rising &nbsp;•&nbsp;</span>
+      <span>Economy of Dissent &nbsp;•&nbsp;</span>
+      <span>Democracy Under Siege &nbsp;•&nbsp;</span>
+      <span>The AI Governance Crisis &nbsp;•&nbsp;</span>
+      <span>Climate Justice Now &nbsp;•&nbsp;</span>
+      <span>Media & Power &nbsp;•&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ===== PHOTO SLIDESHOW ===== -->
+  <section class="slideshow-section" id="photoSlideshow">
+    <div class="slideshow-track" id="slideshowTrack"></div>
+    <span class="slide-counter">1 / 6</span>
+    <div class="slide-dots"></div>
+    <div class="slideshow-controls">
+      <button class="slide-btn" data-dir="prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="slide-btn" data-dir="next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <div class="slide-thumbs"></div>
+  </section>
+
+  <!-- ===== FEATURED / LATEST BLOG ===== -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-eyebrow">Daily Commentary</p>
+          <h2 class="section-title">Latest Articles</h2>
+        </div>
+        <a href="blog.html" class="btn btn-outline">All Articles →</a>
+      </div>
+
+      <!-- Featured post -->
+      <article class="featured-post fade-in">
+        <div class="featured-post-img">
+          <img src="images/community-training.jpg" alt="Community Awareness Training — Featured" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;" />
+          <span class="post-category">Politics</span>
+        </div>
+        <div class="featured-post-content">
+          <div class="post-meta">
+            <span><i class="fa-regular fa-calendar"></i> October 19, 2026</span>
+            <span><i class="fa-regular fa-clock"></i> 8 min read</span>
+            <span class="post-tag">Featured</span>
+          </div>
+          <h3 class="post-title">Democracy Is Not Dying — It Is Being Rebranded</h3>
+          <p class="post-excerpt">
+            Across the globe, authoritarian impulses are no longer arriving in tanks. They arrive in suits, wielding election results and algorithms. The crisis of democracy in the 21st century is one of legitimacy laundering — and we must name it clearly.
+          </p>
+          <a href="article.html?id=1" class="btn btn-primary">Read Article</a>
+        </div>
+      </article>
+
+      <!-- Post grid -->
+      <div class="post-grid" id="postGrid">
+        <!-- Cards injected by JS -->
+      </div>
+
+      <div class="load-more-wrap">
+        <button class="btn btn-outline" id="loadMoreBtn">Load More Articles</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter-band">
+    <div class="container newsletter-inner">
+      <div class="nl-text">
+        <h3>Get the daily brief — free.</h3>
+        <p>Every morning, one sharp essay straight to your inbox. No noise, no spam.</p>
+      </div>
+      <form class="nl-form" id="newsletterForm">
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit" class="btn btn-primary">Subscribe Free</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== PREMIUM ARTICLES ===== -->
+  <section class="section section-dark" id="premium">
+    <div class="container">
+      <div class="section-header light">
+        <div>
+          <p class="section-eyebrow">Members Only</p>
+          <h2 class="section-title">Premium Articles</h2>
+        </div>
+        <a href="premium.html" class="btn btn-outline-light">View All →</a>
+      </div>
+
+      <div class="premium-pricing">
+        <div class="pricing-card fade-in">
+          <div class="pricing-badge">Free</div>
+          <h4>Reader</h4>
+          <div class="price">Free <span>forever</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Access to all free articles</li>
+            <li><i class="fa-solid fa-check"></i> Daily newsletter</li>
+            <li><i class="fa-solid fa-check"></i> Community comments</li>
+            <li class="muted"><i class="fa-solid fa-xmark"></i> Premium deep-dives</li>
+            <li class="muted"><i class="fa-solid fa-xmark"></i> Research archives</li>
+            <li class="muted"><i class="fa-solid fa-xmark"></i> Exclusive interviews</li>
+          </ul>
+          <a href="#newsletter" class="btn btn-outline-light full-width">Start Free</a>
+        </div>
+        <div class="pricing-card featured fade-in">
+          <div class="pricing-badge popular">Most Popular</div>
+          <h4>Supporter</h4>
+          <div class="price">$5 <span>/ month</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Everything in Free</li>
+            <li><i class="fa-solid fa-check"></i> Premium deep-dive articles</li>
+            <li><i class="fa-solid fa-check"></i> Full research archives</li>
+            <li><i class="fa-solid fa-check"></i> Exclusive interviews</li>
+            <li><i class="fa-solid fa-check"></i> Early access to ebooks</li>
+            <li class="muted"><i class="fa-solid fa-xmark"></i> One-on-one Q&A sessions</li>
+          </ul>
+          <a href="checkout.html?plan=supporter" class="btn btn-primary full-width">Get Supporter</a>
+        </div>
+        <div class="pricing-card fade-in">
+          <div class="pricing-badge">Patron</div>
+          <h4>Patron</h4>
+          <div class="price">$12 <span>/ month</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Everything in Supporter</li>
+            <li><i class="fa-solid fa-check"></i> Monthly Q&A with Pratap</li>
+            <li><i class="fa-solid fa-check"></i> Free ebook every month</li>
+            <li><i class="fa-solid fa-check"></i> Behind-the-scenes notes</li>
+            <li><i class="fa-solid fa-check"></i> Name in credits</li>
+            <li><i class="fa-solid fa-check"></i> Priority support</li>
+          </ul>
+          <a href="checkout.html?plan=patron" class="btn btn-outline-light full-width">Become a Patron</a>
+        </div>
+      </div>
+
+      <!-- Premium article teasers -->
+      <div class="premium-teasers">
+        <div class="premium-teaser-card fade-in" data-locked="true">
+          <span class="lock-badge"><i class="fa-solid fa-lock"></i> Premium</span>
+          <span class="post-category">Economy</span>
+          <h4>The Poverty Narrative That Serves the Rich</h4>
+          <p>Why the mainstream discourse on poverty is structurally designed to protect accumulated wealth — and what that means for policy...</p>
+          <div class="teaser-footer">
+            <span><i class="fa-regular fa-clock"></i> 14 min</span>
+            <a href="checkout.html?plan=supporter" class="btn btn-sm-primary">Unlock Article</a>
+          </div>
+        </div>
+        <div class="premium-teaser-card fade-in" data-locked="true">
+          <span class="lock-badge"><i class="fa-solid fa-lock"></i> Premium</span>
+          <span class="post-category">Technology</span>
+          <h4>Algorithmic Colonialism: Big Tech's New Empire</h4>
+          <p>Silicon Valley's expansion into the Global South mirrors the colonial extractivism of centuries past — only now the resource is data...</p>
+          <div class="teaser-footer">
+            <span><i class="fa-regular fa-clock"></i> 18 min</span>
+            <a href="checkout.html?plan=supporter" class="btn btn-sm-primary">Unlock Article</a>
+          </div>
+        </div>
+        <div class="premium-teaser-card fade-in" data-locked="true">
+          <span class="lock-badge"><i class="fa-solid fa-lock"></i> Premium</span>
+          <span class="post-category">Culture</span>
+          <h4>The Silence of the Intellectuals</h4>
+          <p>A generation of public thinkers has traded moral clarity for career safety. This is the age of the compliant scholar...</p>
+          <div class="teaser-footer">
+            <span><i class="fa-regular fa-clock"></i> 11 min</span>
+            <a href="checkout.html?plan=supporter" class="btn btn-sm-primary">Unlock Article</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EBOOKS ===== -->
+  <section class="section" id="ebooks">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-eyebrow">Knowledge Store</p>
+          <h2 class="section-title">Ebooks by Pratap</h2>
+        </div>
+        <a href="store.html" class="btn btn-outline">Browse All →</a>
+      </div>
+
+      <div class="ebook-grid" id="ebookGrid">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section section-alt" id="about">
+    <div class="container about-inner">
+      <div class="about-image-wrap fade-in">
+        <div class="about-img-frame">
+          <img src="images/pratap-portrait.jpg" alt="Pratap Titung" style="width:100%;height:100%;object-fit:cover;object-position:top center;" />
+        </div>
+        <div class="about-social">
+          <a href="https://x.com/titung489" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/titung489" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/titung489" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/c/PJTOfficial" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="about-text fade-in">
+        <p class="section-eyebrow">About the Author</p>
+        <h2>Pratap Titung</h2>
+        <p class="about-tagline"><em>Writer. Thinker. Dissenter.</em></p>
+        <p>
+          Pratap Titung is an independent writer and commentator committed to exploring the fault lines of contemporary society. With a background in political philosophy and journalism, Pratap writes at the intersection of power, culture, and human dignity.
+        </p>
+        <p>
+          Every article published here is a product of rigorous research, honest reflection, and a refusal to accept comfortable fictions. Whether it's dissecting electoral manipulation, interrogating media narratives, or celebrating grassroots resistance — this blog is where the work gets done.
+        </p>
+        <div class="about-cta">
+          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+          <a href="#donate" class="btn btn-ghost">Support the Work ❤</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL CONTRIBUTION ===== -->
+  <section class="section section-alt" id="social">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-eyebrow">On the Ground</p>
+          <h2 class="section-title">Social Contribution</h2>
+        </div>
+        <div class="social-filter-tabs" id="socialTabs">
+          <button class="s-tab active" data-tab="all">All</button>
+          <button class="s-tab" data-tab="photos">Photos</button>
+          <button class="s-tab" data-tab="news">News & Press</button>
+          <button class="s-tab" data-tab="events">Events</button>
+        </div>
+      </div>
+
+      <!-- Masonry Gallery -->
+      <div class="social-grid" id="socialGrid">
+
+        <!-- REAL PHOTO: Community Training -->
+        <div class="social-card photo-card fade-in" data-type="photos">
+          <div class="social-card-media" style="height:260px;overflow:hidden;position:relative;">
+            <img src="images/community-training.jpg" alt="Community Awareness Training" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
+            <span class="social-media-badge"><i class="fa-solid fa-camera"></i> Photo</span>
+          </div>
+          <div class="social-card-body">
+            <p class="social-card-date"><i class="fa-regular fa-calendar"></i> January 4, 2082 B.S.</p>
+            <h4>एक दिने सचेतना मूलक तालिम — मनहरी-१</h4>
+            <p>Conducted a one-day community-based awareness training programme at Manhari-1. The session focused on land rights, rehabilitation, and disaster preparedness for local community members.</p>
+          </div>
+        </div>
+
+        <div class="social-card news-card fade-in" data-type="news">
+          <div class="social-card-body news-body">
+            <span class="news-source-badge"><i class="fa-solid fa-newspaper"></i> Kantipur Daily</span>
+            <p class="social-card-date"><i class="fa-regular fa-calendar"></i> October 12, 2026</p>
+            <h4>"Pratap Titung voices concern over press freedom at journalists' summit"</h4>
+            <p>Speaking at the Nepal Press Freedom Forum, Pratap highlighted growing digital censorship threats and called for stronger legal protections for independent journalists.</p>
+            <a href="#" class="social-read-link">Read full coverage <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- REAL PHOTO: Festival Greeting -->
+        <div class="social-card photo-card fade-in" data-type="photos">
+          <div class="social-card-media" style="height:240px;overflow:hidden;position:relative;">
+            <img src="images/festival-greeting-square.jpg" alt="Dashain Tihar Chhath Greetings" style="width:100%;height:100%;object-fit:cover;object-position:top center;" />
+            <span class="social-media-badge"><i class="fa-solid fa-star"></i> Greetings</span>
+          </div>
+          <div class="social-card-body">
+            <p class="social-card-date"><i class="fa-regular fa-calendar"></i> October 2026</p>
+            <h4>दशैँ, तिहार तथा छठ पर्बको हार्दिक शुभकामना</h4>
+            <p>"बडा दशैँ, तिहार तथा छठ पर्बको पावन अवसरमा तपाईं र तपाईंको परिवारमा सुख, शान्ति, समृद्धि र सफलताको हार्दिक शुभकामना।" — प्रताप तितुङ</p>
+          </div>
+        </div>
+
+        <div class="social-card events-card fade-in" data-type="events">
+          <div class="social-card-body events-body">
+            <span class="event-badge upcoming"><i class="fa-solid fa-calendar-check"></i> Upcoming Event</span>
+            <p class="social-card-date"><i class="fa-regular fa-calendar"></i> November 3, 2026</p>
+            <h4>Public Talk: "Democracy and Digital Rights in Nepal"</h4>
+            <p>A free public talk at Tribhuvan University, Kirtipur. Open to all students, journalists, and concerned citizens.</p>
+            <div class="event-meta">
+              <span><i class="fa-solid fa-location-dot"></i> TU Central Library Hall</span>
+              <span><i class="fa-regular fa-clock"></i> 2:00 PM — 4:30 PM</span>
+            </div>
+            <a href="contact.html" class="btn btn-primary" style="margin-top:16px;font-size:0.85rem;padding:10px 20px;">RSVP Now</a>
+          </div>
+        </div>
+
+        <!-- REAL PHOTO: Festival Greeting Wide -->
+        <div class="social-card photo-card fade-in" data-type="photos" style="grid-column: span 2;">
+          <div class="social-card-media" style="height:220px;overflow:hidden;position:relative;">
+            <img src="images/festival-greeting-wide.jpg" alt="Festival Greetings Wide" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;" />
+            <span class="social-media-badge"><i class="fa-solid fa-star"></i> Greetings</span>
+          </div>
+          <div class="social-card-body">
+            <p class="social-card-date"><i class="fa-regular fa-calendar"></i> October 2026</p>
+            <h4>Greetings for Dashain, Tihar &amp; Chhath — from Pratap Titung</h4>
+            <p>Wishing all readers, supporters, and fellow citizens a joyful and peaceful festive season.</p>
+          </div>
+        </div>
+
+        <div class="social-card news-card fade-in" data-type="news">
+          <div class="social-card-body news-body">
+            <span class="news-source-badge" style="background:#c0392b20;color:#c0392b;border-color:#c0392b33"><i class="fa-solid fa-newspaper"></i> The Himalayan Times</span>
+            <p class="social-card-date"><i class="fa-regular fa-calendar"></i> September 28, 2026</p>
+            <h4>"Opinion: Why independent blogs matter for Nepali democracy"</h4>
+            <p>Featured opinion piece discussing how digital independent journalism fills the gaps left by mainstream media in Nepal's political reporting.</p>
+            <a href="#" class="social-read-link">Read full coverage <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- REAL PHOTO: Street Rally -->
+        <div class="social-card photo-card fade-in" data-type="photos">
+          <div class="social-card-media" style="height:260px;overflow:hidden;position:relative;">
+            <img src="images/street-rally.jpg" alt="Prabhatpheri Street March" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
+            <span class="social-media-badge"><i class="fa-solid fa-camera"></i> Photo</span>
+          </div>
+          <div class="social-card-body">
+            <p class="social-card-date"><i class="fa-regular fa-calendar"></i> December 2025</p>
+            <h4>प्रभातफेरी कार्यक्रम — Women's Rights March</h4>
+            <p>On the frontlines at a morning rally for women's rights and social justice, reporting alongside activists at the Women Protection Centre awareness march.</p>
+          </div>
+        </div>
+
+        <div class="social-card events-card fade-in" data-type="events">
+          <div class="social-card-body events-body">
+            <span class="event-badge past"><i class="fa-solid fa-circle-check"></i> Completed</span>
+            <p class="social-card-date"><i class="fa-regular fa-calendar"></i> September 10, 2026</p>
+            <h4>Youth Writers' Mentorship Programme — Batch 3</h4>
+            <p>Completed the third cohort of a 6-week free mentorship programme for young writers from rural Nepal, with 22 participants.</p>
+            <div class="event-meta">
+              <span><i class="fa-solid fa-users"></i> 22 participants</span>
+              <span><i class="fa-solid fa-map-pin"></i> Online + Hybrid</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-card news-card fade-in" data-type="news">
+          <div class="social-card-body news-body">
+            <span class="news-source-badge" style="background:#27ae6020;color:#27ae60;border-color:#27ae6033"><i class="fa-solid fa-newspaper"></i> Online Khabar</span>
+            <p class="social-card-date"><i class="fa-regular fa-calendar"></i> August 15, 2026</p>
+            <h4>"ब्लगर प्रताप तितुङको स्वतन्त्र पत्रकारितामा योगदान"</h4>
+            <p>A Nepali-language profile piece on the impact of Pratap Titung's independent journalism on Nepali public discourse.</p>
+            <a href="#" class="social-read-link">Read full coverage <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div><!-- /social-grid -->
+    </div>
+  </section>
+
+  <!-- ===== YOUTUBE VIDEOS ===== -->
+  <section class="section section-dark" id="videos">
+    <div class="container">
+      <div class="section-header light">
+        <div>
+          <p class="section-eyebrow">Watch & Listen</p>
+          <h2 class="section-title">Videos & Talks</h2>
+        </div>
+        <a href="https://www.youtube.com/c/PJTOfficial" target="_blank" rel="noopener" class="btn btn-outline-light">
+          <i class="fa-brands fa-youtube"></i> Subscribe on YouTube
+        </a>
+      </div>
+
+      <!-- Featured Video -->
+      <div class="video-featured fade-in">
+        <div class="video-embed-wrap" id="featuredVideoWrap">
+          <div class="video-thumb-placeholder" data-videoid="dQw4w9WgXcQ" style="background:linear-gradient(135deg,#1a0a0a,#2e0a0a)">
+            <span class="video-thumb-emoji">▶</span>
+            <div class="video-thumb-overlay">
+              <button class="play-btn" onclick="loadVideo('featuredVideoWrap','dQw4w9WgXcQ')">
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="video-featured-info">
+          <span class="video-badge"><i class="fa-brands fa-youtube"></i> Latest</span>
+          <h3>Democracy and Digital Rights: A Nepali Perspective</h3>
+          <p>A 45-minute talk delivered at the South Asia Media Summit, exploring how digital platforms are reshaping political discourse in Nepal and neighbouring democracies.</p>
+          <div class="video-meta">
+            <span><i class="fa-regular fa-calendar"></i> October 14, 2026</span>
+            <span><i class="fa-regular fa-clock"></i> 45:23</span>
+            <span><i class="fa-solid fa-eye"></i> 14.2K views</span>
+          </div>
+          <a href="https://www.youtube.com/c/PJTOfficial" target="_blank" class="btn btn-primary" style="margin-top:20px">
+            <i class="fa-brands fa-youtube"></i> Watch on YouTube
+          </a>
+        </div>
+      </div>
+
+      <!-- Video Grid -->
+      <div class="video-grid" id="videoGrid">
+        <!-- injected by JS -->
+      </div>
+
+      <div class="load-more-wrap" style="margin-top:48px">
+        <a href="https://www.youtube.com/c/PJTOfficial" target="_blank" class="btn btn-outline-light">
+          <i class="fa-brands fa-youtube"></i> See All Videos on YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header centered">
+        <div>
+          <p class="section-eyebrow">What Readers Say</p>
+          <h2 class="section-title">Words from the Community</h2>
+        </div>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p>"Pratap's writing cuts through the noise like nothing else. I read every single article the day it drops. Absolutely essential."</p>
+          <div class="testi-author"><strong>Amara N.</strong> — Nairobi, Kenya</div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p>"The ebook on media literacy changed how I consume news. Bought it for my entire reading group. Highly recommend."</p>
+          <div class="testi-author"><strong>Carlos M.</strong> — São Paulo, Brazil</div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p>"Premium membership is worth every cent. The research depth in those long-form pieces is unmatched anywhere on the web."</p>
+          <div class="testi-author"><strong>Sarah K.</strong> — London, UK</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DONATION ===== -->
+  <section class="section donation-section" id="donate">
+    <div class="container">
+      <div class="donate-inner">
+        <div class="donate-text fade-in">
+          <p class="section-eyebrow">Support Independent Journalism</p>
+          <h2>Keep This Voice Alive</h2>
+          <p>
+            This blog has no corporate sponsors, no ad algorithms, no paywalled agendas. It exists purely because readers like you believe that independent thought deserves to survive.
+          </p>
+          <p>
+            Every donation — however small — pays for research time, server costs, and the space to write freely without compromise.
+          </p>
+          <div class="donate-badges">
+            <span><i class="fa-solid fa-shield-halved"></i> Secure payment</span>
+            <span><i class="fa-solid fa-lock"></i> SSL encrypted</span>
+            <span><i class="fa-solid fa-heart"></i> Reader-funded</span>
+          </div>
+        </div>
+        <div class="donate-box fade-in">
+          <h3>Choose an Amount</h3>
+          <div class="donate-amounts">
+            <button class="amount-btn" data-amount="5">$5</button>
+            <button class="amount-btn active" data-amount="10">$10</button>
+            <button class="amount-btn" data-amount="25">$25</button>
+            <button class="amount-btn" data-amount="50">$50</button>
+          </div>
+          <div class="custom-amount">
+            <label>Or enter a custom amount</label>
+            <div class="amount-input-wrap">
+              <span>$</span>
+              <input type="number" id="customAmount" placeholder="0.00" min="1" />
+            </div>
+          </div>
+          <div class="donate-frequency">
+            <button class="freq-btn active" data-freq="once">One-time</button>
+            <button class="freq-btn" data-freq="monthly">Monthly</button>
+          </div>
+          <button class="btn btn-primary full-width donate-btn" id="donateBtn">
+            <i class="fa-solid fa-heart"></i> Choose Payment Method
+          </button>
+          <p class="donate-note">Pay via eSewa, Khalti, ConnectIPS, PhonePay or Bank Transfer.</p>
+          <div class="nepal-payment-logos">
+            <span class="nepal-pay-badge badge-esewa">eSewa</span>
+            <span class="nepal-pay-badge badge-khalti">Khalti</span>
+            <span class="nepal-pay-badge badge-cips">ConnectIPS</span>
+            <span class="nepal-pay-badge badge-phonepay">PhonePay</span>
+            <span class="nepal-pay-badge badge-bank">NIC Asia Bank</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-initial">PT</span>
+          <span class="brand-name">Pratap Titung</span>
+        </a>
+        <p>Sharp commentary on the world as it is — and as it should be.</p>
+        <div class="footer-social">
+          <a href="https://x.com/titung489" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/titung489" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/titung489" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/c/PJTOfficial" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.facebook.com/titung489" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Blog</h5>
+        <ul>
+          <li><a href="blog.html">All Articles</a></li>
+          <li><a href="blog.html?cat=politics">Politics</a></li>
+          <li><a href="blog.html?cat=culture">Culture</a></li>
+          <li><a href="blog.html?cat=technology">Technology</a></li>
+          <li><a href="blog.html?cat=economy">Economy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Premium</h5>
+        <ul>
+          <li><a href="premium.html">Premium Articles</a></li>
+          <li><a href="store.html">Ebook Store</a></li>
+          <li><a href="checkout.html?plan=supporter">Subscribe</a></li>
+          <li><a href="account.html">My Account</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>About</h5>
+        <ul>
+          <li><a href="#about">About Pratap</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Pratap Titung. All rights reserved.</p>
+        <p>Built with ❤ for independent thought.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL: Donation Confirmation ===== -->
+  <div class="modal-overlay" id="donateModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-icon">❤</div>
+      <h3>Thank You!</h3>
+      <p id="modalMsg">Your generous donation is deeply appreciated. You're keeping independent journalism alive.</p>
+      <button class="btn btn-primary" id="modalCloseBtn">Close</button>
+    </div>
+  </div>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Translation Loading Overlay -->
+  <div class="translate-overlay" id="translateOverlay">
+    <div class="translate-spinner">
+      <i class="fa-solid fa-language"></i>
+      <span id="translateStatus">अनुवाद हुँदैछ...</span>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/payment.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script src="js/translate.js"></script>
+  <script src="js/videos.js"></script>
+  <script src="js/social.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ebook Store — Pratap Titung</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-initial">PT</span>
+        <span class="brand-name">Pratap Titung</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="blog.html">Blog</a>
+        <a href="index.html#premium">Premium</a>
+        <a href="store.html" style="color:var(--accent)">Ebooks</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#donate" class="btn btn-outline-nav">Donate ❤</a>
+        <a href="index.html#premium" class="btn btn-nav">Subscribe</a>
+      </nav>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <p class="section-eyebrow">Knowledge Store</p>
+    <h1>Ebooks by Pratap</h1>
+    <p>Deep dives, research, and reflection — distilled into affordable, downloadable ebooks.</p>
+  </section>
+
+  <!-- STORE -->
+  <section class="section">
+    <div class="container">
+      <div class="store-grid" id="storeGrid"></div>
+    </div>
+  </section>
+
+  <!-- PURCHASE MODAL -->
+  <div class="modal-overlay" id="buyModal">
+    <div class="modal" style="max-width:480px">
+      <button class="modal-close" id="buyModalClose">&times;</button>
+      <div id="buyModalContent"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-initial">PT</span><span class="brand-name">Pratap Titung</span></a>
+        <p>Sharp commentary on the world as it is — and as it should be.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Blog</h5><ul><li><a href="blog.html">All Articles</a></li><li><a href="blog.html?cat=politics">Politics</a></li><li><a href="blog.html?cat=culture">Culture</a></li></ul></div>
+      <div class="footer-col"><h5>Store</h5><ul><li><a href="store.html">All Ebooks</a></li><li><a href="index.html#premium">Premium</a></li><li><a href="index.html#donate">Donate</a></li></ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div class="container footer-bottom-inner"><p>&copy; 2026 Pratap Titung.</p></div></div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+  <script src="js/store.js"></script>
+</body>
+</html>
