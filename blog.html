@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Pratap Titung</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-initial">PT</span>
+        <span class="brand-name">Pratap Titung</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="blog.html" style="color:var(--accent)">Blog</a>
+        <a href="index.html#premium">Premium</a>
+        <a href="store.html">Ebooks</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#donate" class="btn btn-outline-nav">Donate ❤</a>
+        <a href="index.html#premium" class="btn btn-nav">Subscribe</a>
+      </nav>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <p class="section-eyebrow">Daily Commentary</p>
+    <h1>The Blog</h1>
+    <p>Sharp, honest writing on politics, culture, technology, and the human condition. Published every day.</p>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="container filter-inner">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="politics">Politics</button>
+      <button class="filter-btn" data-cat="culture">Culture</button>
+      <button class="filter-btn" data-cat="economy">Economy</button>
+      <button class="filter-btn" data-cat="technology">Technology</button>
+      <button class="filter-btn" data-cat="environment">Environment</button>
+      <button class="filter-btn" data-cat="society">Society</button>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search articles..." />
+      </div>
+    </div>
+  </div>
+
+  <!-- BLOG CONTENT -->
+  <section class="section">
+    <div class="container">
+      <div class="post-grid" id="blogGrid" style="grid-template-columns: repeat(3,1fr);">
+        <!-- injected by JS -->
+      </div>
+      <div class="load-more-wrap" style="margin-top:48px">
+        <button class="btn btn-outline" id="blogLoadMore">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-initial">PT</span><span class="brand-name">Pratap Titung</span></a>
+        <p>Sharp commentary on the world as it is — and as it should be.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Categories</h5><ul><li><a href="blog.html?cat=politics">Politics</a></li><li><a href="blog.html?cat=culture">Culture</a></li><li><a href="blog.html?cat=technology">Technology</a></li><li><a href="blog.html?cat=economy">Economy</a></li></ul></div>
+      <div class="footer-col"><h5>Quick Links</h5><ul><li><a href="store.html">Ebook Store</a></li><li><a href="index.html#premium">Subscribe</a></li><li><a href="index.html#donate">Donate</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Legal</h5><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div class="container footer-bottom-inner"><p>&copy; 2026 Pratap Titung.</p><p>Independent journalism.</p></div></div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>
